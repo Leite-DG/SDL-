@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APL Reparos - Soluções Completas para Seu Lar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #093b8b 0%, #1d4ed8 100%);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(36, 35, 35, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .service-card:hover {
+            transform: scale(1.03);
+        }
+        .floating-button {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }  
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="bg-blue-600 text-white p-2 rounded-lg mr-3">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-800">APL<span class="text-blue-600">Reparos</span></h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium">Serviços</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium">Sobre Nós</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 font-medium">Depoimentos</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium">Contato</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Soluções completas para seu lar</h1>
+                <p class="text-xl mb-8">Precisando de reparos rápidos e eficientes? Manutenção elétrica, hidráulica e muito mais com atendimento ágil e preços acessíveis!</p>
+                <a href="https://wa.me/5531982895486?text=Olá%20APL,%20gostaria%20de%20conhecer%20seus%20planos" 
+                   class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Fale conosco agora
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Profissional consertando" 
+                     class="rounded-lg shadow-2xl max-w-md w-full floating-button">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 service-card">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-faucet text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Encanamento</h3>
+                    <p class="text-gray-600 text-center">Vazamentos, troca de torneiras, desentupimentos e instalações hidráulicas completas.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 service-card">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Elétrica</h3>
+                    <p class="text-gray-600 text-center">Instalações, manutenções, troca de disjuntores e solução de problemas elétricos.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 service-card">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-paint-roller text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Pintura</h3>
+                    <p class="text-gray-600 text-center">Pintura residencial e comercial, preparação de paredes e acabamentos profissionais.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 service-card">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-hammer text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Reparos Gerais</h3>
+                    <p class="text-gray-600 text-center">Conserto de móveis, troca de fechaduras, montagem de móveis e pequenos reparos.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 service-card">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-tree text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Jardinagem</h3>
+                    <p class="text-gray-600 text-center">Poda de plantas, manutenção de jardins, instalação de sistemas de irrigação.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 service-card">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-home text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Manutenção Preventiva</h3>
+                    <p class="text-gray-600 text-center">Check-up completo da sua residência para evitar problemas futuros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                         alt="Equipe MasterFix" 
+                         class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre Nós</h2>
+                    <p class="text-gray-600 mb-4">A MasterFix nasceu da necessidade de oferecer um serviço completo e confiável para resolver todos os problemas domésticos em um único lugar.</p>
+                    <p class="text-gray-600 mb-6">Nossa equipe é composta por profissionais multiqualificados, com anos de experiência em diversas áreas, garantindo que você não precise contratar serviços diferentes para cada necessidade da sua casa.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Profissionais Certificados</h4>
+                                <p class="text-gray-600">Todos os nossos técnicos possuem certificações e treinamentos constantes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Garantia de Satisfação</h4>
+                                <p class="text-gray-600">Se não ficar satisfeito, refazemos o serviço sem custo adicional.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Atendimento Rápido</h4>
+                                <p class="text-gray-600">Disponibilidade para emergências e agendamento flexível.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/5511999999999?text=Olá%20MasterFix,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" 
+                       class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                        Saiba mais sobre nós
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">O que nossos clientes dizem</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Ana Carolina</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Contratei o serviço para resolver um vazamento e o técnico ainda arrumou minha torneira que pingava há meses e ajustou a porta do armário que não fechava direito. Incrível como um profissional pode resolver tantos problemas!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Roberto Almeida</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Finalmente encontrei um serviço que resolve tudo! O técnico veio, fez a manutenção elétrica que precisava, consertou a cerca do jardim e ainda deu dicas para evitar problemas futuros. Profissionalismo total!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Mariana Santos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Adorei o conceito de ter um único profissional para várias necessidades. Pintou meu quarto, instalou prateleiras e ainda consertou a porta do banheiro. Tudo com muita atenção e cuidado com minha casa. Recomendo!"</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://wa.me/5511999999999?text=Olá%20MasterFix,%20gostaria%20de%20solicitar%20um%20orçamento" 
+                   class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Peça seu orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Precisa de ajuda com sua casa?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Nossa equipe está pronta para resolver todos os seus problemas domésticos com eficiência e profissionalismo.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="https://wa.me/5511999999999?text=Olá%20MasterFix,%20gostaria%20de%20solicitar%20um%20orçamento" 
+                   class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full inline-flex items-center justify-center transition duration-300">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Chamar no WhatsApp
+                </a>
+                
+                <a href="tel:+5511999999999" 
+                   class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-full inline-flex items-center justify-center transition duration-300">
+                    <i class="fas fa-phone mr-2 text-xl"></i> Ligar agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="font-semibold text-gray-800">Quais áreas da cidade vocês atendem?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600 hidden">
+                        <p>Atendemos em toda a região metropolitana. Para áreas mais distantes, pode haver uma pequena taxa de deslocamento que será informada no orçamento.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="font-semibold text-gray-800">Como funciona o pagamento?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600 hidden">
+                        <p>Aceitamos todas as formas de pagamento: dinheiro, PIX, cartão de crédito/débito (com ou sem parcelamento) e transferência bancária. O pagamento é realizado após a conclusão do serviço.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="font-semibold text-gray-800">Qual o prazo para atendimento?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600 hidden">
+                        <p>Para emergências, atendemos no mesmo dia. Para serviços agendados, normalmente conseguimos marcar dentro de 24 a 48 horas, dependendo da demanda.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex justify-between items-center w-full text-left focus:outline-none">
+                        <h3 class="font-semibold text-gray-800">Vocês fornecem nota fiscal?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600 hidden">
+                        <p>Sim, somos uma empresa registrada e fornecemos nota fiscal para todos os serviços realizados, que pode ser enviada por e-mail ou impressa, conforme sua preferência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 text-white p-2 rounded-lg mr-3">
+                            <i class="fas fa-tools text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold">Master<span class="text-blue-400">Fix</span></h2>
+                    </div>
+                    <p class="text-gray-400">Soluções completas para seu lar com um único profissional qualificado.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Serviços</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Encanamento</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Elétrica</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pintura</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Reparos Gerais</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">(11) 99999-9999</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">contato@masterfix.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">WhatsApp</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 MasterFix. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511999999999?text=Olá%20MasterFix,%20gostaria%20de%20solicitar%20um%20orçamento" 
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-50 transition">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const content = button.nextElementSibling;
+                
+                // Toggle content visibility
+                content.classList.toggle('hidden');
+                
+                // Rotate chevron icon
+                const icon = button.querySelector('i');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
